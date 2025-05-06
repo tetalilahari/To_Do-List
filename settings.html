@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Settings</h1>
+  </header>
+
+  <main>
+    <div id="settings-container">
+      <h2>Profile Settings</h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button onclick="saveSettings()">Save</button>
+
+      <h2>Appearance</h2>
+      <button onclick="toggleTheme()">Toggle Dark/Light Theme</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 To-Do List</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

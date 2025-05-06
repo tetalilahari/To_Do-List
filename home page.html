@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Workspace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <h1 class="heading">To-Do List</h1>
+        
+        <!-- Central Content (Middle Text) -->
+        <div class="content">
+            <div class="auth">
+                <a href="login.html" class="login">Get Started!</a>  <!-- Link to login.html -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- <div class="footer">
+            <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+        </div> -->
+    </div>
+</body>
+</html>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://us.123rf.com/450wm/d8nn/d8nn2201/d8nn220100386/180326694-modern-black-workspace-with-a-copy-space-for-product-display-digital-devices-and-supplies-top-view.jpg?ver=6');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container holds all content */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+/* Heading styling */
+.heading {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 90px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Eras Bold ITC";
+    font-style: italic;
+}
+
+/* Content section (middle text) */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text horizontally and vertically */
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Eras Bold ITC";
+    font-style: italic;
+    z-index: 5;
+}
+
+/* Get Started button */
+.auth a {
+    color: white;
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/* .auth a:hover {
+    text-decoration: underline;
+} */
+
+/* Footer at the bottom */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+</style>

@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://us.123rf.com/450wm/d8nn/d8nn2201/d8nn220100386/180326694-modern-black-workspace-with-a-copy-space-for-product-display-digital-devices-and-supplies-top-view.jpg?ver=6');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; /* Prevent scrolling */
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+/* Navigation */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  width: 700px;
+  margin: 80px auto 20px; /* Added margin to avoid overlapping with fixed header */
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Headings */
+h2, h3 {
+  text-align: center;
+}
+
+/* Task Container */
+#task-container {
+  text-align: center;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#task-list li {
+  background: #e9ecef;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Buttons */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Task Form */
+#task-form-container {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  width: 99%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+.task-form-container h2{
+  font-size: 30px;
+  align-items: center;
+  color: antiquewhite;
+}
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.logo img {
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 30px;
+  width: 80px;
+  align-items: right;
+  
+}
+.logo span {
+  font-size: 40px;
+  font-weight: bold;
+  align-items: center;
+}

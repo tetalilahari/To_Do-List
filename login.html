@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login - To-Do</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('https://thumbs.dreamstime.com/z/composition-to-do-list-textured-background-150063529.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 30px;
+            width: 50px;
+            align-items: right;
+        }
+        .logo span {
+            font-size: 40px;
+            font-weight: bold;
+            align-items: center;
+        }
+
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Auth Section */
+        .auth-section {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .auth-container h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .auth-form label {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .auth-form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .auth-form button {
+            padding: 10px;
+            background-color: gold;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .auth-form button:hover {
+            background-color: gold;
+        }
+
+        .auth-container p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .auth-container a {
+            color: gold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="https://tse4.mm.bing.net/th?id=OIP.lIg5xGyDEOXN62A_-aU7XQHaHH&pid=Api&P=0&h=180" alt="To-Do List Logo">
+            <span style="margin-left: 560px;">TO-DO List</span>
+        </div>
+        <nav>
+            <ul>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="auth-section">
+        <div class="auth-container">
+            <h1>Login</h1>
+            <form action="index.html" method="GET" class="auth-form">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.html">Register here</a>.</p>
+        </div>
+    </section>
+</body>
+</html>
